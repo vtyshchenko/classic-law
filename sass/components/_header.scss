@@ -1,8 +1,10 @@
 .hamburger-menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: $accent-color;
     padding: 0 12px;
+    margin-top: 7px;
     border-radius: 5px;
 }
 
@@ -28,22 +30,22 @@
 .hamburger-menu__icon {
     position: relative;
     display: block;
+    background: $main-header-text-color;
     width: 24px;
     height: 2px;
     border: 1px solid $main-header-text-color;
-    background: $main-header-text-color;
 }
 
 .hamburger-menu__icon::after,
 .hamburger-menu__icon::before {
     position: absolute;
-    content: "";
-    display: block;
-    width: 24px;
-    border: 1px solid $main-header-text-color;
-    background-color: $main-header-text-color;
     left: -1px;
     top: -6px;
+    display: block;
+    content: "";
+    background-color: $main-header-text-color;
+    width: 24px;
+    border: 1px solid $main-header-text-color;
 }
 
 .hamburger-menu__icon::after {
@@ -51,16 +53,16 @@
 }
 
 .hamburger-menu__checkbox:checked ~ .hamburger-menu__icon::after {
-    transform: rotateZ(90deg);
     top: 0;
+    transform: rotateZ(90deg);
 }
 
 .hamburger-menu__checkbox:checked ~ .hamburger-menu__icon::before {
-    transform: rotateZ(-90deg);
     top: 0;
+    transform: rotateZ(-90deg);
 }
 
 .hamburger-menu__checkbox:checked ~ .hamburger-menu__icon {
-    transform: rotateZ(45deg);
     top: 0;
+    transform: rotateZ(45deg);
 }
