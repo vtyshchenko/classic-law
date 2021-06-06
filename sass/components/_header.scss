@@ -3,6 +3,7 @@
     justify-content: space-between;
     background-color: $accent-color;
     padding: 0 12px;
+    border-radius: 5px;
 }
 
 .hamburger-menu__title {
@@ -10,54 +11,56 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 1.22;
-    color: #FFFFFF;
+    color: $main-header-text-color;
 }
 
-.hamburger-menu__label {
+.hamburger-menu__button {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 36px;
     height: 36px;
     border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
     cursor: pointer;
 }
 
-.hamburger-menu__span {
+.hamburger-menu__icon {
     position: relative;
     display: block;
     width: 24px;
     height: 2px;
+    border: 1px solid $main-header-text-color;
     background: $main-header-text-color;
 }
 
-.hamburger-menu__span::after,
-.hamburger-menu__span::before {
+.hamburger-menu__icon::after,
+.hamburger-menu__icon::before {
     position: absolute;
     content: "";
     display: block;
     width: 24px;
-    height: 2px;
+    border: 1px solid $main-header-text-color;
     background-color: $main-header-text-color;
-    left: 0;
-    top: -5px;
+    left: -1px;
+    top: -6px;
 }
 
-.hamburger-menu__span::after {
-    top: 5px;
+.hamburger-menu__icon::after {
+    top: 4px;
 }
 
-.hamburger-menu__checkbox:checked ~ .hamburger-menu__span::after {
+.hamburger-menu__checkbox:checked ~ .hamburger-menu__icon::after {
+    transform: rotateZ(90deg);
+    top: 0;
+}
+
+.hamburger-menu__checkbox:checked ~ .hamburger-menu__icon::before {
+    transform: rotateZ(-90deg);
+    top: 0;
+}
+
+.hamburger-menu__checkbox:checked ~ .hamburger-menu__icon {
     transform: rotateZ(45deg);
     top: 0;
-}
-
-.hamburger-menu__checkbox:checked ~ .hamburger-menu__span::before {
-    transform: rotateZ(-45deg);
-    top: 0;
-}
-
-.hamburger-menu__checkbox:checked ~ .hamburger-menu__label {
-    background-color: $accent-color;
-    
 }
