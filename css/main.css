@@ -165,7 +165,98 @@
   font-style: normal;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   width: 320px;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+.hamburger-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #65C466;
+  padding: 0 12px;
+}
+
+.hamburger-menu__title {
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #FFFFFF;
+}
+
+.hamburger-menu__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.hamburger-menu__span {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #ffffff;
+}
+
+.hamburger-menu__span::after,
+.hamburger-menu__span::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #ffffff;
+  left: 0;
+  top: -5px;
+}
+
+.hamburger-menu__span::after {
+  top: 5px;
+}
+
+.hamburger-menu__checkbox:checked ~ .hamburger-menu__span::after {
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+  top: 0;
+}
+
+.hamburger-menu__checkbox:checked ~ .hamburger-menu__span::before {
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+  top: 0;
+}
+
+.hamburger-menu__checkbox:checked ~ .hamburger-menu__label {
+  background-color: #65C466;
 }
 /*# sourceMappingURL=main.css.map */
