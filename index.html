@@ -31,6 +31,86 @@
             />
             <span class="hamburger-menu__icon"></span>
           </label>
+          <div class="menu">
+            <label class="menu__label">
+              <input class="menu__input" type="text" />
+              <button class="menu__search-button" type="submit">
+                <svg class="menu__icon" width="18px" height="18px">
+                  <use href="./images/icons.svg#search-mobile-icon"></use>
+                </svg>
+              </button>
+            </label>
+
+            <ul class="list mobile-menu-nav">
+              <li></li>
+              <li class="mobile-menu-nav__item">
+                <h2 class="mobile-menu-nav__title" data-toggle-list>
+                  Компания
+                </h2>
+                <ul
+                  class="list submenu mobile-menu-nav__submenu is-hidden"
+                  data-show-list
+                >
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">Контакты</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">О компании</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile-menu-nav__item">
+                <h2 class="mobile-menu-nav__title" data-toggle-list>Каталог</h2>
+                <ul
+                  class="list submenu mobile-menu-nav__submenu is-hidden"
+                  data-show-list
+                >
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">Оконные системы</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">Фасадные системы</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">Уличная мебель</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">
+                      Мультимедиа проекторы
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">Цветные МФУ</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">
+                      Измерительное оборудование
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile-menu-nav__item">
+                <a class="link mobile-menu-nav__link" href="#">
+                  <h2>Контакты</h2>
+                </a>
+              </li>
+              <li class="mobile-menu-nav__item">
+                <a class="link mobile-menu-nav__link" href="#">
+                  <h2>Вопросы-ответы</h2>
+                </a>
+              </li>
+              <li class="mobile-menu-nav__item">
+                <a class="link mobile-menu-nav__link" href="#">
+                  <h2>Прайс-лист</h2>
+                </a>
+              </li>
+              <li class="mobile-menu-nav__item">
+                <a class="link mobile-menu-nav__link" href="#">
+                  <h2>Услуги</h2>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -43,5 +123,7 @@
     <section><div class="container"></div></section>
     <section><div class="container"></div></section>
     <footer><div class="container"></div></footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>

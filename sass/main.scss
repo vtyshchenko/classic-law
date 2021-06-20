@@ -1,7 +1,13 @@
 @import "./common/fonts";
 @import "./common/common";
+
 @import "./utils/variables";
+@import "./utils/visually-hidden";
 @import "./common/container";
+
 @import "./components/body";
 @import "./components/logo";
 @import "./components/header";
+
+@import "./components/burger-menu";
+@import "./components/buttons";

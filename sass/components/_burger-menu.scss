@@ -1,0 +1,46 @@
+.menu {
+  position: fixed;
+  display: block;
+  padding-top: 20px;
+  padding-right: 13px;
+  top: 43px;
+
+  margin: 0 auto;
+
+  &__label {
+    display: flex;
+    box-shadow: $box-shadow;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  &__input {
+    display: block;
+    background: $main-header-text-color;
+    border-radius: 10px;
+
+    width: 233px;
+    height: 35px;
+    padding: 8px;
+  }
+
+  &__search-button {
+    display: block;
+    flex-grow: 1;
+    padding: 9px 8px 8px 10px;
+    line-height: 0;
+
+    border: none;
+    background: $button-background-color;
+    border-radius: 10px;
+    color: $accent-color;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+
+  .is-hidden {
+    display: none;
+  }
+}

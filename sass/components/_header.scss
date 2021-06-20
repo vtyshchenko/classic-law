@@ -1,22 +1,21 @@
 .hamburger-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $accent-color;
-    padding: 0 12px;
-    margin-top: 7px;
-    border-radius: 5px;
-}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $accent-color;
+  padding: 0 12px;
+  margin-top: 7px;
+  border-radius: 5px;
 
-.hamburger-menu__title {
+  &__title {
     font-family: $font-family-gilroy;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.22;
     color: $main-header-text-color;
-}
+  }
 
-.hamburger-menu__button {
+  &__button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,44 +24,45 @@
     border-radius: 50%;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
     cursor: pointer;
-}
+  }
 
-.hamburger-menu__icon {
+  &__icon {
     position: relative;
     display: block;
     background: $main-header-text-color;
     width: 24px;
     height: 2px;
     border: 1px solid $main-header-text-color;
-}
 
-.hamburger-menu__icon::after,
-.hamburger-menu__icon::before {
-    position: absolute;
-    left: -1px;
-    top: -6px;
-    display: block;
-    content: "";
-    background-color: $main-header-text-color;
-    width: 24px;
-    border: 1px solid $main-header-text-color;
-}
+    &::after,
+    &::before {
+      position: absolute;
+      left: -1px;
+      top: -6px;
+      display: block;
+      content: "";
+      background-color: $main-header-text-color;
+      width: 24px;
+      border: 1px solid $main-header-text-color;
+    }
 
-.hamburger-menu__icon::after {
-    top: 4px;
-}
+    &::after {
+      top: 4px;
+    }
 
-.hamburger-menu__checkbox:checked ~ .hamburger-menu__icon::after {
-    top: 0;
-    transform: rotateZ(90deg);
-}
+    .hamburger-menu__checkbox:checked ~ &::after {
+      top: 0;
+      transform: rotateZ(90deg);
+    }
 
-.hamburger-menu__checkbox:checked ~ .hamburger-menu__icon::before {
-    top: 0;
-    transform: rotateZ(-90deg);
-}
+    .hamburger-menu__checkbox:checked ~ &::before {
+      top: 0;
+      transform: rotateZ(-90deg);
+    }
 
-.hamburger-menu__checkbox:checked ~ .hamburger-menu__icon {
-    top: 0;
-    transform: rotateZ(45deg);
+    .hamburger-menu__checkbox:checked ~ & {
+      top: 0;
+      transform: rotateZ(45deg);
+    }
+  }
 }

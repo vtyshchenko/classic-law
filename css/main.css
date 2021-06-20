@@ -165,6 +165,36 @@
   font-style: normal;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -174,7 +204,7 @@
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -196,7 +226,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #65C466;
+  background-color: #65c466;
   padding: 0 12px;
   margin-top: 7px;
   border-radius: 5px;
@@ -237,8 +267,7 @@
   border: 1px solid #ffffff;
 }
 
-.hamburger-menu__icon::after,
-.hamburger-menu__icon::before {
+.hamburger-menu__icon::after, .hamburger-menu__icon::before {
   position: absolute;
   left: -1px;
   top: -6px;
@@ -269,5 +298,56 @@
   top: 0;
   -webkit-transform: rotateZ(45deg);
           transform: rotateZ(45deg);
+}
+
+.menu {
+  position: fixed;
+  display: block;
+  padding-top: 20px;
+  padding-right: 13px;
+  top: 43px;
+  margin: 0 auto;
+}
+
+.menu__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+.menu__input {
+  display: block;
+  background: #ffffff;
+  border-radius: 10px;
+  width: 233px;
+  height: 35px;
+  padding: 8px;
+}
+
+.menu__search-button {
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 9px 8px 8px 10px;
+  line-height: 0;
+  border: none;
+  background: #f0f0f0;
+  border-radius: 10px;
+  color: #65c466;
+}
+
+.menu__icon {
+  fill: currentColor;
+}
+
+.menu .is-hidden {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
