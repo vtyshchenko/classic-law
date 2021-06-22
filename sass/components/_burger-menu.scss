@@ -1,16 +1,34 @@
 .menu {
   position: fixed;
-  display: block;
+  // display: block;
   padding-top: 20px;
-  padding-right: 13px;
-  top: 43px;
+  padding-right: 23px;
+  padding-left: 28px;
+  top: 76px;
+
+  // width: 100vw;
+  height: 100vh;
+  background-color: $accent-color;
 
   margin: 0 auto;
+  overflow: auto;
+
+  // opacity: 0;
+  // visibility: hidden;
+  // pointer-events: none;
+  z-index: 50;
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
 
   &__label {
-    display: flex;
+    position: relative;
+    // display: flex;
     box-shadow: $box-shadow;
-    align-items: center;
+    // align-items: center;
     border-radius: 10px;
   }
 
@@ -19,16 +37,22 @@
     background: $main-header-text-color;
     border-radius: 10px;
 
-    width: 233px;
+    width: 269px;
     height: 35px;
     padding: 8px;
   }
 
   &__search-button {
-    display: block;
-    flex-grow: 1;
-    padding: 9px 8px 8px 10px;
+    position: absolute;
+    top: 16px;
+    left: 233px;
+    // display: block;
+    // flex-grow: 1;
+    // padding: 9px 8px 8px 10px;
     line-height: 0;
+    height: 35px;
+    width: 36px;
+    z-index: 60;
 
     border: none;
     background: $button-background-color;
@@ -42,5 +66,12 @@
 
   .is-hidden {
     display: none;
+  }
+}
+
+mobile-menu-nav {
+  &__submenu {
+    display: block;
+    margin-left: 10px;
   }
 }
