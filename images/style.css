@@ -1,0 +1,20 @@
+[class^="_icon-"], [class*=" _icon-"] {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+._icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+._icon-sertificate {
+  width: 0.98828125em;
+}
