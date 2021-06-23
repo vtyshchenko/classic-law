@@ -55,6 +55,11 @@
     background: $button-background-color;
     border-radius: 10px;
     color: $accent-color;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
   }
 
   &__icon {
@@ -69,9 +74,12 @@
   }
 
   &__user-avatar {
+    display: block;
+    fill: $main-header-text-color;
     width: 27px;
     height: 27px;
-    fill: currentColor;
+    margin: 0 auto;
+    margin-bottom: 10px;
   }
 
   &__registration-link {
@@ -82,15 +90,6 @@
     text-align: center;
 
     color: $main-header-text-color;
-  }
-
-  &__user-avatar {
-    display: block;
-    fill: $main-header-text-color;
-    width: 27px;
-    height: 27px;
-    margin: 0 auto;
-    margin-bottom: 10px;
   }
 
   .is-hidden {

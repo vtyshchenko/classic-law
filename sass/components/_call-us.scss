@@ -1,4 +1,8 @@
 .call-us {
+  &__phone-body {
+    margin-bottom: 19px;
+  }
+
   &__phone {
     display: block;
     font-weight: 700;
@@ -6,10 +10,9 @@
     line-height: 22/18 * 100%;
 
     color: $main-header-text-color;
-    margin-bottom: 19px;
   }
 
-  &__phone p {
+  &__phone-text {
     font-weight: 600;
     font-size: 12px;
     line-height: 14/12 * 100%;
@@ -40,5 +43,10 @@
     text-transform: uppercase;
 
     color: $accent-color;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
   }
 }

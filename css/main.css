@@ -358,6 +358,10 @@ body {
   color: #65c466;
 }
 
+.menu__search-button:hover, .menu__search-button:focus {
+  cursor: pointer;
+}
+
 .menu__icon {
   fill: currentColor;
 }
@@ -379,9 +383,12 @@ body {
 }
 
 .menu__user-avatar {
+  display: block;
+  fill: #ffffff;
   width: 27px;
   height: 27px;
-  fill: currentColor;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .menu__registration-link {
@@ -391,15 +398,6 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
-}
-
-.menu__user-avatar {
-  display: block;
-  fill: #ffffff;
-  width: 27px;
-  height: 27px;
-  margin: 0 auto;
-  margin-bottom: 10px;
 }
 
 .menu .is-hidden {
@@ -433,16 +431,19 @@ body {
   color: #294b29;
 }
 
+.call-us__phone-body {
+  margin-bottom: 19px;
+}
+
 .call-us__phone {
   display: block;
   font-weight: 700;
   font-size: 18px;
   line-height: 122.22222%;
   color: #ffffff;
-  margin-bottom: 19px;
 }
 
-.call-us__phone p {
+.call-us__phone-text {
   font-weight: 600;
   font-size: 12px;
   line-height: 116.66667%;
@@ -470,5 +471,9 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #65c466;
+}
+
+.call-us__button:hover, .call-us__button:focus {
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
