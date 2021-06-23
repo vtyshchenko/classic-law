@@ -1,21 +1,19 @@
 .menu {
   position: fixed;
-  // display: block;
   padding-top: 20px;
   padding-right: 23px;
   padding-left: 28px;
-  top: 76px;
+  top: 67px;
 
-  // width: 100vw;
-  height: 100vh;
+  height: 618px;
   background-color: $accent-color;
 
   margin: 0 auto;
   overflow: auto;
 
-  // opacity: 0;
-  // visibility: hidden;
-  // pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   z-index: 50;
 
   &.is-open {
@@ -26,16 +24,17 @@
 
   &__label {
     position: relative;
-    // display: flex;
     box-shadow: $box-shadow;
-    // align-items: center;
     border-radius: 10px;
+    display: block;
+    margin-bottom: 15px;
   }
 
   &__input {
     display: block;
     background: $main-header-text-color;
     border-radius: 10px;
+    border: none;
 
     width: 269px;
     height: 35px;
@@ -44,14 +43,12 @@
 
   &__search-button {
     position: absolute;
-    top: 16px;
-    left: 233px;
-    // display: block;
-    // flex-grow: 1;
-    // padding: 9px 8px 8px 10px;
+    top: 0;
+    left: 234px;
+    padding: 0;
     line-height: 0;
     height: 35px;
-    width: 36px;
+    width: 35px;
     z-index: 60;
 
     border: none;
@@ -64,14 +61,71 @@
     fill: currentColor;
   }
 
+  &__registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__user-avatar {
+    width: 27px;
+    height: 27px;
+    fill: currentColor;
+  }
+
+  &__registration-link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 124%;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: $main-header-text-color;
+  }
+
+  &__user-avatar {
+    display: block;
+    fill: $main-header-text-color;
+    width: 27px;
+    height: 27px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
   .is-hidden {
     display: none;
   }
 }
 
-mobile-menu-nav {
+.mobile-menu-nav {
+  margin-bottom: 21px;
+
+  &__item {
+    margin-bottom: 15px;
+  }
+
+  &__link,
+  &__title {
+    font-size: 16px;
+    line-height: 1.1875;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    color: $menu-text-color;
+  }
+
   &__submenu {
     display: block;
     margin-left: 10px;
+  }
+}
+
+.submenu {
+  &__link {
+    font-size: 10px;
+    line-height: 120%;
+
+    color: $menu-text-color;
   }
 }

@@ -28,15 +28,16 @@
             <input
               class="hamburger-menu__checkbox visually-hidden"
               type="checkbox"
+              data-menu-button
             />
             <span class="hamburger-menu__icon"></span>
           </label>
-          <div class="menu">
+          <div class="menu" data-menu>
             <label class="menu__label">
               <input class="menu__input" type="text" />
               <button class="menu__search-button" type="submit">
                 <svg class="menu__icon" width="18px" height="18px">
-                  <use href="./images/icons.svg#search-mobile-icon"></use>
+                  <use href="./images/icons.svg#_icon-search"></use>
                 </svg>
               </button>
             </label>
@@ -91,40 +92,45 @@
               </li>
               <li class="mobile-menu-nav__item">
                 <a class="link mobile-menu-nav__link" href="#">
-                  <h2>Контакты</h2>
+                  <h2 class="mobile-menu-nav__title">Контакты</h2>
                 </a>
               </li>
               <li class="mobile-menu-nav__item">
                 <a class="link mobile-menu-nav__link" href="#">
-                  <h2>Вопросы-ответы</h2>
+                  <h2 class="mobile-menu-nav__title">Вопросы-ответы</h2>
                 </a>
               </li>
               <li class="mobile-menu-nav__item">
                 <a class="link mobile-menu-nav__link" href="#">
-                  <h2>Прайс-лист</h2>
+                  <h2 class="mobile-menu-nav__title">Прайс-лист</h2>
                 </a>
               </li>
               <li class="mobile-menu-nav__item">
                 <a class="link mobile-menu-nav__link" href="#">
-                  <h2>Услуги</h2>
+                  <h2 class="mobile-menu-nav__title">Услуги</h2>
                 </a>
               </li>
             </ul>
             <div class="call-us">
               <label class="call-us__phone">
-                <svg class="call-us__icon" width="20" height="20">
-                  <use></use>
+                <svg class="call-us__icon">
+                  <use href="./images/icons.svg#_icon-phone"></use>
                 </svg>
                 +7 (000) 000-00-00
                 <p>Бесплатная консультация</p>
               </label>
               <button class="call-us__button" type="button">
-                Получить консультацию
+                Заказать звонок
               </button>
             </div>
-            <button class="button-registration" type="submit">
-              Войти/регестрация
-            </button>
+            <div class="menu__registration">
+              <a class="link menu__registration-link" href="#">
+                <svg class="menu__user-avatar">
+                  <use href="./images/icons.svg#_icon-user"></use>
+                </svg>
+                Войти/регестрация
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -140,5 +146,6 @@
     <footer><div class="container"></div></footer>
 
     <script src="./js/menu.js"></script>
+    <script src="./js/menu-mobile.js"></script>
   </body>
 </html>

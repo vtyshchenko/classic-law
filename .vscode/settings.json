@@ -21,5 +21,6 @@
         "last 2 versions"
     ],
     "python.pythonPath": "/usr/bin/python3",
-    "vsicons.associations.fileDefault.file": null
+    "vsicons.associations.fileDefault.file": null,
+    "liveServer.settings.port": 5501
 }
