@@ -1,9 +1,11 @@
-.menu {
+.burger-menu {
   position: fixed;
   padding-top: 20px;
-  padding-right: 23px;
-  padding-left: 28px;
+  padding-right: 11px;
+  padding-left: 16px;
   top: 67px;
+  // width: 296px;
+  width: $mobile - 2 * $mobile-container-padding;
 
   height: 618px;
   background-color: $accent-color;
@@ -36,7 +38,7 @@
     border-radius: 10px;
     border: none;
 
-    width: 269px;
+    max-width: 269px;
     height: 35px;
     padding: 8px;
   }
@@ -94,37 +96,5 @@
 
   .is-hidden {
     display: none;
-  }
-}
-
-.mobile-menu-nav {
-  margin-bottom: 21px;
-
-  &__item {
-    margin-bottom: 15px;
-  }
-
-  &__link,
-  &__title {
-    font-size: 16px;
-    line-height: 1.1875;
-    text-transform: uppercase;
-    cursor: pointer;
-
-    color: $menu-text-color;
-  }
-
-  &__submenu {
-    display: block;
-    margin-left: 10px;
-  }
-}
-
-.submenu {
-  &__link {
-    font-size: 10px;
-    line-height: 120%;
-
-    color: $menu-text-color;
   }
 }

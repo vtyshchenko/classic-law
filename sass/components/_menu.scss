@@ -1,0 +1,31 @@
+.menu-nav {
+  margin-bottom: 21px;
+
+  &__item {
+    margin-bottom: 15px;
+  }
+
+  &__link,
+  &__title {
+    font-size: 16px;
+    line-height: 1.1875;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    color: $menu-text-color;
+  }
+
+  &__submenu {
+    display: block;
+    margin-left: 10px;
+  }
+}
+
+.submenu {
+  &__link {
+    font-size: 10px;
+    line-height: 120%;
+
+    color: $menu-text-color;
+  }
+}

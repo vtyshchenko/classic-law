@@ -15,6 +15,9 @@ $placeholder-color: #c2c2c2;
 $main-footer-text-color: #ffffff;
 $secondary-footer-text-color: #959aa6;
 
+$button-background-color: #f0f0f0;
+$menu-text-color: #294b29;
+
 $font-family-roboto: "Roboto", sans-serif;
 $font-family-gilroy: "Gilroy";
 $font-family-trajan-pro-3: "TrajanPro3";
@@ -23,5 +26,13 @@ $anim-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 $anim-duration: 250ms;
 
 $box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-$button-background-color: #f0f0f0;
-$menu-text-color: #294b29;
+$box-shadow-form: 0px 0px 15px rgba(0, 0, 0, 0.1);
+$box-shadow-form-button: 0px 2.21205px 8.29519px rgba(0, 0, 0, 0.25);
+
+$mobile-container-padding: 12px;
+
+$mobile: 320px;
+$tablet: 768px;
+$lit-desktop: 1024px;
+$desktop: 1336px;
+$big-desktop: 1920px;

@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
-    />
+    /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
@@ -22,34 +22,32 @@
     <!-- HEADER -->
     <header>
       <div class="container">
-        <div class="hamburger-menu">
-          <h1 class="hamburger-menu__title">Классика права</h1>
-          <label class="hamburger-menu__button">
+        <div class="header">
+          <h1 class="header__title">Классика права</h1>
+          <label class="header__button">
             <input
-              class="hamburger-menu__checkbox visually-hidden"
+              class="header__checkbox visually-hidden"
               type="checkbox"
               data-menu-button
             />
-            <span class="hamburger-menu__icon"></span>
+            <span class="header__icon"></span>
           </label>
-          <div class="menu" data-menu>
-            <label class="menu__label">
-              <input class="menu__input" type="text" />
-              <button class="menu__search-button" type="submit">
-                <svg class="menu__icon" width="18px" height="18px">
+          <div class="burger-menu" data-menu>
+            <label class="burger-menu__label">
+              <input class="burger-menu__input" type="text" />
+              <button class="burger-menu__search-button" type="submit">
+                <svg class="burger-menu__icon" width="18px" height="18px">
                   <use href="./images/icons.svg#_icon-search"></use>
                 </svg>
               </button>
             </label>
 
-            <ul class="list mobile-menu-nav">
+            <ul class="list menu-nav">
               <li></li>
-              <li class="mobile-menu-nav__item">
-                <h2 class="mobile-menu-nav__title" data-toggle-list>
-                  Компания
-                </h2>
+              <li class="menu-nav__item">
+                <h2 class="menu-nav__title" data-toggle-list>Компания</h2>
                 <ul
-                  class="list submenu mobile-menu-nav__submenu is-hidden"
+                  class="list submenu menu-nav__submenu is-hidden"
                   data-show-list
                 >
                   <li class="submenu__item">
@@ -60,10 +58,10 @@
                   </li>
                 </ul>
               </li>
-              <li class="mobile-menu-nav__item">
-                <h2 class="mobile-menu-nav__title" data-toggle-list>Каталог</h2>
+              <li class="menu-nav__item">
+                <h2 class="menu-nav__title" data-toggle-list>Каталог</h2>
                 <ul
-                  class="list submenu mobile-menu-nav__submenu is-hidden"
+                  class="list submenu menu-nav__submenu is-hidden"
                   data-show-list
                 >
                   <li class="submenu__item">
@@ -90,24 +88,24 @@
                   </li>
                 </ul>
               </li>
-              <li class="mobile-menu-nav__item">
-                <a class="link mobile-menu-nav__link" href="#">
-                  <h2 class="mobile-menu-nav__title">Контакты</h2>
+              <li class="menu-nav__item">
+                <a class="link menu-nav__link" href="#">
+                  <h2 class="menu-nav__title">Контакты</h2>
                 </a>
               </li>
-              <li class="mobile-menu-nav__item">
-                <a class="link mobile-menu-nav__link" href="#">
-                  <h2 class="mobile-menu-nav__title">Вопросы-ответы</h2>
+              <li class="menu-nav__item">
+                <a class="link menu-nav__link" href="#">
+                  <h2 class="menu-nav__title">Вопросы-ответы</h2>
                 </a>
               </li>
-              <li class="mobile-menu-nav__item">
-                <a class="link mobile-menu-nav__link" href="#">
-                  <h2 class="mobile-menu-nav__title">Прайс-лист</h2>
+              <li class="menu-nav__item">
+                <a class="link menu-nav__link" href="#">
+                  <h2 class="menu-nav__title">Прайс-лист</h2>
                 </a>
               </li>
-              <li class="mobile-menu-nav__item">
-                <a class="link mobile-menu-nav__link" href="#">
-                  <h2 class="mobile-menu-nav__title">Услуги</h2>
+              <li class="menu-nav__item">
+                <a class="link menu-nav__link" href="#">
+                  <h2 class="menu-nav__title">Услуги</h2>
                 </a>
               </li>
             </ul>
@@ -125,9 +123,9 @@
                 Заказать звонок
               </button>
             </div>
-            <div class="menu__registration">
-              <a class="link menu__registration-link" href="#">
-                <svg class="menu__user-avatar">
+            <div class="burger-menu__registration">
+              <a class="link burger-menu__registration-link" href="#">
+                <svg class="burger-menu__user-avatar">
                   <use href="./images/icons.svg#_icon-user"></use>
                 </svg>
                 Войти/регестрация
@@ -138,7 +136,74 @@
       </div>
     </header>
 
-    <section><div class="container"></div></section>
+    <!-- QUESTIONS -->
+    <section class="questions">
+      <div class="container">
+        <h2 class="questions__title">Задайте вопрос юристу онлайн</h2>
+        <p class="questions__text">
+          Компания специализируется на оказании широкого спектра услуг как для
+          корпоративных клиентов так и для частных лиц. Профессионализм и
+          ответственность ключевые преимущества нашей компании.
+        </p>
+        <picture>
+          <source
+            srcset="
+              ./images/mobile/questions/justice_statue.webp      1x,
+              ./images/mobile/questions/justice_statue@1.5x.webp 1.5x,
+              ./images/mobile/questions/justice_statue@2x.webp   2x
+            "
+            media="(max-width: 767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/mobile/questions/justice_statue.png      1x,
+              ./images/mobile/questions/justice_statue@1.5x.png 1.5x,
+              ./images/mobile/questions/justice_statue@2x.png   2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img class="questions__justice-statue-img" src="#" alt="" />
+        </picture>
+        <form class="form" action="">
+          <div class="form__group">
+            <input
+              class="form__input-question"
+              type="text"
+              id="question-title"
+              name="question-title"
+              placeholder="Введите Ваш вопрос..."
+              title="Введите Ваш вопрос..."
+            />
+            <textarea
+              class="form__text-question"
+              name="question-text"
+              id="question-text"
+              placeholder="Введите Ваш вопрос..."
+              title="Введите Ваш вопрос..."
+              maxlength="400"
+            ></textarea>
+            <div class="form__send-question-group">
+              <label class="form__label-confident">
+                <input
+                  class="form__checkbox-confident visually-hidden"
+                  type="checkbox"
+                />
+                <span class="form__checkbox-icon"></span>
+                <span class="form__text-confident">
+                  Нажимая кнопку “Отправить” вы соглашаетесь с политикой
+                  конфидециальности</span
+                >
+              </label>
+              <button class="form__button-send-question" type="submit">
+                Отправить вопрос
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
     <section><div class="container"></div></section>
     <section><div class="container"></div></section>
     <section><div class="container"></div></section>

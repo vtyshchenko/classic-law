@@ -1,4 +1,4 @@
-.hamburger-menu {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,17 +51,17 @@
       top: 4px;
     }
 
-    .hamburger-menu__checkbox:checked ~ &::after {
+    .header__checkbox:checked ~ &::after {
       top: 0;
       transform: rotateZ(90deg);
     }
 
-    .hamburger-menu__checkbox:checked ~ &::before {
+    .header__checkbox:checked ~ &::before {
       top: 0;
       transform: rotateZ(-90deg);
     }
 
-    .hamburger-menu__checkbox:checked ~ & {
+    .header__checkbox:checked ~ & {
       top: 0;
       transform: rotateZ(45deg);
     }

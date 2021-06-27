@@ -1,0 +1,119 @@
+.form {
+  //   &__group {  }
+
+  &__input-question {
+    width: 266px;
+    height: 33px;
+
+    background: $main-header-text-color;
+    border: 0.801824px solid $secondary-text-color;
+    box-sizing: border-box;
+    box-shadow: $box-shadow-form;
+    border-radius: 4.00912px;
+    margin-bottom: 11px;
+
+    // &:focus-within {
+    //   border: 1px solid $accent-color;
+    //   color: blue;
+    // }
+  }
+
+  &__text-question {
+    background-color: $main-header-text-color;
+    border: 0.801824px solid $secondary-text-color;
+    box-sizing: border-box;
+    box-shadow: $box-shadow-form;
+    border-radius: 4.00912px;
+
+    width: 266px;
+    height: 89px;
+    resize: none;
+    margin-bottom: 20px;
+  }
+
+  &__send-question-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+  }
+
+  &__label-confident {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text-confident {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8.27586px;
+    line-height: 10px;
+
+    color: $confident-checkbox-text-color;
+    max-width: 150px;
+    margin-right: 12px;
+    margin-left: 8px;
+  }
+
+  &__checkvox-confident {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $secondary-text-color;
+    margin-bottom: 30px;
+    transition: color $anim-duration $anim-timing-function;
+  }
+
+  &__checkbox-icon {
+    display: block;
+    color: $secondary-text-color;
+    margin-right: 4px;
+    min-width: 16px;
+    min-height: 16px;
+    flex-grow: 2;
+    border: 2px solid currentColor;
+    border-radius: 4px;
+    transition: color $anim-duration $anim-timing-function;
+
+    .form__checkbox-confident:checked + & {
+      background-image: url("../images/checkbox-checked.svg");
+      background-color: $main-header-text-color;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-origin: padding-box;
+      border-color: $accent-color;
+      padding: 5px;
+    }
+
+    .form__checkbox-confident:focus + &,
+    .form__label-confident:focus > &,
+    .form__label-confident:hover > & {
+      cursor: pointer;
+      color: $accent-color;
+    }
+  }
+
+  &__button-send-question {
+    min-width: 103px;
+    height: 24px;
+
+    background: $accent-color;
+    box-shadow: $box-shadow-form-button;
+    border-radius: 2.76506px;
+
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 7.742px;
+    line-height: 9 / 7.742 * 100%;
+
+    text-align: center;
+
+    color: $main-header-text-color;
+    border: none;
+    padding: 7px 17px;
+  }
+}
