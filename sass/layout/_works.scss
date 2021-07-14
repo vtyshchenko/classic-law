@@ -1,0 +1,85 @@
+.works {
+  &__title {
+    font-family: $font-family-trajan-pro-3;
+    font-size: 22px;
+    line-height: 26 / 22 * 100%;
+    text-align: center;
+
+    color: $accent-color;
+    margin-bottom: 15px;
+  }
+
+  &__description {
+    // width: 286px;
+
+    font-family: $font-family-gilroy;
+    font-size: 13px;
+    line-height: 15 / 13 * 100%;
+    text-align: center;
+
+    color: $main-text-color;
+    margin-bottom: 30px;
+  }
+
+  // &__list {
+  // }
+
+  &__item {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+
+    &-img {
+      margin: 0 auto;
+      width: 211px;
+      height: 317px;
+
+      background: linear-gradient(
+          180deg,
+          #414141 -49.24%,
+          rgba(65, 65, 65, 0) 120.35%
+        ),
+        linear-gradient(0deg, $accent-color 0%, rgba(37, 137, 249, 0) 23.16%),
+        url(welder-5136380_1920.jpg);
+      filter: drop-shadow(0px 2.35098px 17.6323px rgba(0, 0, 0, 0.25));
+      border-radius: 5.877px;
+    }
+
+    &-description {
+      width: 211px;
+      top: 134px;
+      left: 42px;
+      position: absolute;
+      padding: 0 8px;
+    }
+
+    &-title {
+      font-family: $font-family-roboto;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21 / 18 * 100%;
+
+      color: $main-footer-text-color;
+      margin-bottom: 8px;
+    }
+
+    &-text {
+      font-family: $font-family-roboto;
+      font-size: 11px;
+      line-height: 13 / 11 * 100%;
+
+      color: $main-footer-text-color;
+      margin-bottom: 43px;
+    }
+
+    &-link {
+      display: block;
+      font-family: $font-family-roboto;
+      font-size: 11px;
+      line-height: 12 / 11 * 100%;
+      text-align: center;
+
+      color: $main-footer-text-color;
+    }
+  }
+}

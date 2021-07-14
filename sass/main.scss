@@ -1,7 +1,7 @@
 @import "./common/fonts";
 @import "./common/common";
-@import "./utils/variables";
 
+@import "./utils/variables";
 @import "./utils/visually-hidden";
 
 @import "./common/section";
@@ -10,12 +10,14 @@
 @import "./components/body";
 @import "./components/logo";
 @import "./components/form";
-
 @import "./components/burger-menu";
 @import "./components/buttons";
 @import "./components/call-us";
 @import "./components/menu";
 @import "./components/form";
+
 @import "./layout/header";
 @import "./layout/question";
 @import "./layout/lawyers-in-business";
+@import "./layout/works";
+@import "./layout/advantages";
