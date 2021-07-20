@@ -10,7 +10,7 @@
   }
 
   &__description {
-    // width: 286px;
+    width: 286px;
 
     font-family: $font-family-gilroy;
     font-size: 13px;
@@ -18,7 +18,7 @@
     text-align: center;
 
     color: $main-text-color;
-    margin-bottom: 30px;
+    margin: 0 auto 30px auto;
   }
 
   // &__list {
@@ -36,7 +36,7 @@
 
       background: linear-gradient(
           180deg,
-          #414141 -49.24%,
+          $main-text-color -49.24%,
           rgba(65, 65, 65, 0) 120.35%
         ),
         linear-gradient(0deg, $accent-color 0%, rgba(37, 137, 249, 0) 23.16%),

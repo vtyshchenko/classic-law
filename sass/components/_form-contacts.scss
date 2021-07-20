@@ -1,0 +1,66 @@
+.form-contacts {
+  width: 170px;
+  padding: 10px;
+
+  &__label {
+    display: block;
+
+    font-family: $font-family-gilroy;
+    font-size: 12px;
+    line-height: 14 / 12 * 100%;
+
+    color: $consultation-second-text-color;
+    margin-bottom: 18px;
+  }
+
+  &__input-info {
+    display: block;
+    width: 100%;
+    font-family: $font-family-gilroy;
+    font-size: 12px;
+    line-height: 14 / 12 * 100%;
+
+    color: $main-text-color;
+    margin-top: 5px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    &:focus {
+      outline: $accent-color;
+      border-color: $accent-color;
+    }
+  }
+
+  &__button {
+    display: block;
+    width: 132px;
+    background: $accent-color;
+    border-radius: 2.7673px;
+
+    font-family: $font-family-gilroy;
+    font-size: 10px;
+    line-height: 120%;
+    text-align: center;
+
+    color: $main-footer-text-color;
+    border: none;
+    outline: $accent-color;
+    padding: 6px 10px;
+    margin: 0 auto 13px;
+  }
+
+  &__text {
+    font-family: $font-family-gilroy;
+    font-size: 6.5px;
+    line-height: 8 / 6.5 * 100%;
+    text-align: center;
+
+    color: $consultation-second-text-color;
+    &--link {
+      color: $main-text-color;
+    }
+  }
+}

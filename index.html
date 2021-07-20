@@ -165,7 +165,7 @@
           />
           <img class="questions__justice-statue-img" src="#" alt="" />
         </picture>
-        <form class="form" action="">
+        <form class="form">
           <div class="form__group">
             <input
               class="form__input-question"
@@ -307,17 +307,16 @@
     <!-- ADVANTAGES -->
     <section class="section advantages">
       <div class="container">
-        <h3 class="advantages__title">Наши преимущества</h3>
+        <h2 class="advantages__title">Наши преимущества</h2>
         <p class="advantages__text">Команда опытных юристов</p>
         <ul class="list advantages__list">
           <li class="advantages__item">
             <div class="advantages__item-title-goup">
-              <svg class="advantages__item-image">
-                <use></use>
-              </svg>
-              <h4 class="advantages__item-title">
+              <h3
+                class="advantages__item-title advantages__item-title-low-price"
+              >
                 Низкие цены и широкий ассортимент
-              </h4>
+              </h3>
             </div>
             <p class="advantages__item-description">
               Не следует, однако забывать, что постоянный количественный рост и
@@ -327,10 +326,13 @@
           </li>
           <li class="advantages__item">
             <div class="advantages__item-title-goup">
-              <svg class="advantages__item-image">
-                <use></use>
-              </svg>
-              <h4 class="advantages__item-title">Весь товар сертифицирован</h4>
+              <h3
+                class="
+                  advantages__item-title advantages__item-title-sertificates
+                "
+              >
+                Весь товар сертифицирован
+              </h3>
             </div>
             <p class="advantages__item-description">
               С другой стороны консультация с широким активом позволяет оценить
@@ -340,12 +342,9 @@
           </li>
           <li class="advantages__item">
             <div class="advantages__item-title-goup">
-              <svg class="advantages__item-image">
-                <use></use>
-              </svg>
-              <h4 class="advantages__item-title">
+              <h3 class="advantages__item-title advantages__item-title-network">
                 Широкая сеть представительств
-              </h4>
+              </h3>
             </div>
             <p class="advantages__item-description">
               Таким образом консультация с широким активом способствует
@@ -355,12 +354,11 @@
           </li>
           <li class="advantages__item">
             <div class="advantages__item-title-goup">
-              <svg class="advantages__item-image">
-                <use></use>
-              </svg>
-              <h4 class="advantages__item-title">
+              <h3
+                class="advantages__item-title advantages__item-title-delivery"
+              >
                 Оперативная доставка и выгрузка товара
-              </h4>
+              </h3>
             </div>
             <p class="advantages__item-description">
               Идейные соображения высшего порядка, а также постоянное
@@ -371,8 +369,157 @@
         </ul>
       </div>
     </section>
-    <section><div class="container"></div></section>
-    <section><div class="container"></div></section>
+
+    <!-- CONTACT US -->
+    <section class="section contact-us">
+      <div class="container">
+        <h2 class="contact-us__title">
+          <span class="contact-us__title--green">Юридическая помощь</span>
+          начинается с консультации
+        </h2>
+        <ul class="contact-us__list">
+          <li class="contact-us__list-item">
+            <p class="contact-us__list-item-text">
+              Заполните форму заявки , что бы получить первую бесплатную
+              консультацию по Вашей ситуации
+            </p>
+          </li>
+          <li class="contact-us__list-item">
+            <p class="contact-us__list-item-text">
+              Наш менеджер свяжется с вами в ближайшее время
+            </p>
+          </li>
+        </ul>
+        <div class="contact-us__info">
+          <form class="form-contacts">
+            <label class="form-contacts__label">
+              Введите Ваше имя
+              <input
+                class="form-contacts__input-info"
+                type="text"
+                name="name"
+                minlength="2"
+                title="Please enter your name. Username must be two words separated by space."
+                placeholder="John Jonson"
+                pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+                required
+              />
+            </label>
+            <label class="form-contacts__label">
+              Введите номер телефона
+              <input
+                class="form-contacts__input-info"
+                type="tel"
+                name="phome"
+                title="Enter your phone number. The phone must be in the format +38(000)000-00-00"
+                placeholder="+38(___)___-__-__"
+                pattern="\+([0-9]{2})(\([0-9]{3}\))([0-9]{3})-([0-9]{2})-([0-9]{2})"
+                minlength="17"
+                maxlength="17"
+                required
+              />
+            </label>
+            <button class="form-contacts__button" type="submit">
+              Получить консультацию
+            </button>
+            <p class="form-contacts__text">
+              Нажимая на кнопку, Вы даете согласие на обработку
+              <span class="form-contacts__text--link">персональных данных</span>
+            </p>
+          </form>
+          <picture>
+            <source
+              srcset="
+                ./images/big-desktop/contact-us/phone-bg.webp      1x,
+                ./images/big-desktop/contact-us/phone-bg@1.5x.webp 1.5x,
+                ./images/big-desktop/contact-us/phone-bg@2x.webp   2x
+              "
+              media="(min-width: 1920px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/desktop/contact-us/phone-bg.webp      1x,
+                ./images/desktop/contact-us/phone-bg@1.5x.webp 1.5x,
+                ./images/desktop/contact-us/phone-bg@2x.webp   2x
+              "
+              media="(min-width: 1336px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/lit-desktop/contact-us/phone-bg.webp      1x,
+                ./images/lit-desktop/contact-us/phone-bg@1.5x.webp 1.5x,
+                ./images/lit-desktop/contact-us/phone-bg@2x.webp   2x
+              "
+              media="(min-width: 1024px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/tablet/contact-us/phone-bg.webp      1x,
+                ./images/tablet/contact-us/phone-bg@1.5x.webp 1.5x,
+                ./images/tablet/contact-us/phone-bg@2x.webp   2x
+              "
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/mobile/contact-us/phone-bg.webp      1x,
+                ./images/mobile/contact-us/phone-bg@1.5x.webp 1.5x,
+                ./images/mobile/contact-us/phone-bg@2x.webp   2x
+              "
+              media="(max-width: 767px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="
+                ./images/big-desktop/contact-us/phone-bg.png      1x,
+                ./images/big-desktop/contact-us/phone-bg@1.5x.png 1.5x,
+                ./images/big-desktop/contact-us/phone-bg@2x.png   2x
+              "
+              media="(min-width: 1920px)"
+            />
+            <source
+              srcset="
+                ./images/desktop/contact-us/phone-bg.png      1x,
+                ./images/desktop/contact-us/phone-bg@1.5x.png 1.5x,
+                ./images/desktop/contact-us/phone-bg@2x.png   2x
+              "
+              media="(min-width: 1336px)"
+            />
+            <source
+              srcset="
+                ./images/lit-desktop/contact-us/phone-bg.png      1x,
+                ./images/lit-desktop/contact-us/phone-bg@1.5x.png 1.5x,
+                ./images/lit-desktop/contact-us/phone-bg@2x.png   2x
+              "
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="
+                ./images/tablet/contact-us/phone-bg.png      1x,
+                ./images/tablet/contact-us/phone-bg@1.5x.png 1.5x,
+                ./images/tablet/contact-us/phone-bg@2x.png   2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/mobile/contact-us/phone-bg.png      1x,
+                ./images/mobile/contact-us/phone-bg@1.5x.png 1.5x,
+                ./images/mobile/contact-us/phone-bg@2x.png   2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img class="contact-us__img" src="#" alt="phone" />
+          </picture>
+        </div>
+      </div>
+    </section>
+
     <section><div class="container"></div></section>
     <footer><div class="container"></div></footer>
 

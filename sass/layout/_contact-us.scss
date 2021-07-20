@@ -1,0 +1,60 @@
+.contact-us {
+  &__title {
+    display: block;
+    font-family: $font-family-trajan-pro-3;
+    font-size: 22px;
+    line-height: 26 / 22 * 100%;
+
+    margin-bottom: 30px;
+
+    &--green {
+      color: $accent-color;
+    }
+  }
+
+  &__list {
+    margin-bottom: 20px;
+
+    &-item {
+      display: flex;
+
+      &::before {
+        display: inline-block;
+        text-align: center;
+        content: "";
+        background-image: url("../images/svg/li-circle.svg");
+        min-width: 8px;
+        max-width: 8px;
+        height: 8px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 9px;
+        margin-top: 2px;
+      }
+
+      &-text {
+        font-family: $font-family-gilroy;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 13 / 11 * 100%;
+
+        color: $main-text-color;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__info {
+    position: relative;
+    display: flex;
+  }
+
+  &__img {
+    position: absolute;
+    top: -28px;
+    right: -15px;
+  }
+}

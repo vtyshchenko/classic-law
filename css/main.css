@@ -677,6 +677,68 @@ body {
   padding: 7px 17px;
 }
 
+.form-contacts {
+  width: 170px;
+  padding: 10px;
+}
+
+.form-contacts__label {
+  display: block;
+  font-family: "Gilroy";
+  font-size: 12px;
+  line-height: 116.66667%;
+  color: #a9a9a9;
+  margin-bottom: 18px;
+}
+
+.form-contacts__input-info {
+  display: block;
+  width: 100%;
+  font-family: "Gilroy";
+  font-size: 12px;
+  line-height: 116.66667%;
+  color: #414141;
+  margin-top: 5px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.form-contacts__input-info:focus {
+  outline: #65c466;
+  border-color: #65c466;
+}
+
+.form-contacts__button {
+  display: block;
+  width: 132px;
+  background: #65c466;
+  border-radius: 2.7673px;
+  font-family: "Gilroy";
+  font-size: 10px;
+  line-height: 120%;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  outline: #65c466;
+  padding: 6px 10px;
+  margin: 0 auto 13px;
+}
+
+.form-contacts__text {
+  font-family: "Gilroy";
+  font-size: 6.5px;
+  line-height: 123.07692%;
+  text-align: center;
+  color: #a9a9a9;
+}
+
+.form-contacts__text--link {
+  color: #414141;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -863,12 +925,13 @@ body {
 }
 
 .works__description {
+  width: 286px;
   font-family: "Gilroy";
   font-size: 13px;
   line-height: 115.38462%;
   text-align: center;
   color: #414141;
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
 }
 
 .works__item {
@@ -928,14 +991,17 @@ body {
   line-height: 118.18182%;
   text-align: center;
   color: #65c466;
+  margin-bottom: 15px;
 }
 
 .advantages__text {
+  display: block;
   font-family: "Gilroy";
   font-size: 13px;
   line-height: 115.38462%;
   text-align: center;
   color: #414141;
+  margin-bottom: 43px;
 }
 
 .advantages__item {
@@ -949,21 +1015,67 @@ body {
   padding: 15px 33px 20px 10px;
 }
 
-.advantages__item-image {
-  width: 41px;
-  height: 41px;
-  background: #ffffff;
-  -webkit-box-shadow: 0px 0px 13.8737px #dedede;
-          box-shadow: 0px 0px 13.8737px #dedede;
-  border-radius: 50;
-}
-
 .advantages__item-title {
   font-family: "Gilroy";
   font-weight: 600;
   font-size: 11px;
   line-height: 127.27273%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 19px;
   color: #696969;
+}
+
+.advantages__item-title-low-price::before {
+  display: inline-block;
+  content: "";
+  background-image: url("../images/svg/low-price.svg");
+  min-width: 41px;
+  max-width: 41px;
+  height: 41px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 9px;
+}
+
+.advantages__item-title-sertificates::before {
+  display: inline-block;
+  content: "";
+  background-image: url("../images/svg/sertificates.svg");
+  min-width: 41px;
+  max-width: 41px;
+  height: 41px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 9px;
+}
+
+.advantages__item-title-delivery::before {
+  display: inline-block;
+  content: "";
+  background-image: url("../images/svg/delivery.svg");
+  min-width: 41px;
+  max-width: 41px;
+  height: 41px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 9px;
+}
+
+.advantages__item-title-network::before {
+  display: inline-block;
+  content: "";
+  background-image: url("../images/svg/network.svg");
+  min-width: 41px;
+  max-width: 41px;
+  height: 41px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 9px;
 }
 
 .advantages__item-description {
@@ -971,5 +1083,66 @@ body {
   font-size: 9.7px;
   line-height: 113.40206%;
   color: #9d9d9d;
+}
+
+.contact-us__title {
+  display: block;
+  font-family: "TrajanPro3";
+  font-size: 22px;
+  line-height: 118.18182%;
+  margin-bottom: 30px;
+}
+
+.contact-us__title--green {
+  color: #65c466;
+}
+
+.contact-us__list {
+  margin-bottom: 20px;
+}
+
+.contact-us__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-us__list-item::before {
+  display: inline-block;
+  text-align: center;
+  content: "";
+  background-image: url("../images/svg/li-circle.svg");
+  min-width: 8px;
+  max-width: 8px;
+  height: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 9px;
+  margin-top: 2px;
+}
+
+.contact-us__list-item-text {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 118.18182%;
+  color: #414141;
+}
+
+.contact-us__list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contact-us__info {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-us__img {
+  position: absolute;
+  top: -28px;
+  right: -15px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -6,23 +6,24 @@
     text-align: center;
 
     color: $accent-color;
+    margin-bottom: 15px;
   }
 
   &__text {
+    display: block;
     font-family: $font-family-gilroy;
     font-size: 13px;
     line-height: 15 / 13 * 100%;
     text-align: center;
 
     color: $main-text-color;
+    margin-bottom: 43px;
   }
 
   &__item {
     width: 245px;
     height: 142px;
     margin: 0 auto 19px auto;
-    // left: 37px;
-    // top: 1761px;
 
     background: $main-header-text-color;
     box-shadow: 0px 0px 13.8737px #dedede;
@@ -32,21 +33,64 @@
     // &-title-goup {
     // }
 
-    &-image {
-      width: 41px;
-      height: 41px;
-      background: #ffffff;
-      box-shadow: 0px 0px 13.8737px #dedede;
-      border-radius: 50;
-    }
-
     &-title {
       font-family: $font-family-gilroy;
       font-weight: 600;
       font-size: 11px;
       line-height: 14 / 11 * 100%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 19px;
 
       color: $specifics-title-color;
+    }
+
+    &-title-low-price::before {
+      display: inline-block;
+      content: "";
+      background-image: url("../images/svg/low-price.svg");
+      min-width: 41px;
+      max-width: 41px;
+      height: 41px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right: 9px;
+    }
+
+    &-title-sertificates::before {
+      display: inline-block;
+      content: "";
+      background-image: url("../images/svg/sertificates.svg");
+      min-width: 41px;
+      max-width: 41px;
+      height: 41px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right: 9px;
+    }
+
+    &-title-delivery::before {
+      display: inline-block;
+      content: "";
+      background-image: url("../images/svg/delivery.svg");
+      min-width: 41px;
+      max-width: 41px;
+      height: 41px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right: 9px;
+    }
+
+    &-title-network::before {
+      display: inline-block;
+      content: "";
+      background-image: url("../images/svg/network.svg");
+      min-width: 41px;
+      max-width: 41px;
+      height: 41px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right: 9px;
     }
 
     &-description {
