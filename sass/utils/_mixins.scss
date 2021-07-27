@@ -1,0 +1,12 @@
+@mixin settings__icons($fill, $width, $height) {
+  fill: $fill;
+  width: $width;
+  height: $height;
+}
+
+@mixin font($fs, $lh, $fw: 400, $ff: $font-family-roboto) {
+  font-family: $ff;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: decimal-round($lh / $fs, 3);
+}
