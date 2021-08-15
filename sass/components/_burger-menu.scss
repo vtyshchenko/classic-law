@@ -1,10 +1,9 @@
 .burger-menu {
   position: fixed;
-  padding-top: 20px;
-  padding-right: 11px;
-  padding-left: 16px;
+  padding-top: 15px;
+  padding-right: 13px;
+  padding-left: 13px;
   top: 67px;
-  // width: 296px;
   width: $mobile - 2 * $mobile-container-padding;
 
   height: 618px;
@@ -18,18 +17,45 @@
   pointer-events: none;
   z-index: 50;
 
+  @media screen and (min-width: $tablet) {
+    top: 90px;
+    width: $tablet - 2 * $mobile-container-padding;
+    height: 1230px;
+    padding-top: $tablet-container-padding;
+    padding-right: $tablet-container-padding;
+    padding-left: $tablet-container-padding;
+  }
+
+  @media screen and (min-width: $lit-desktop) {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
   &.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
+
+    @media screen and (min-width: $lit-desktop) {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
   }
 
   &__label {
     position: relative;
-    box-shadow: $box-shadow;
+    box-shadow: 0px 0px 15px $box-shadow-color;
     border-radius: 10px;
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet) {
+      border-radius: 17px;
+      box-shadow: 0px 0px 25px $box-shadow-color;
+      margin-bottom: 45px;
+    }
   }
 
   &__input {
@@ -38,15 +64,22 @@
     border-radius: 10px;
     border: none;
 
-    max-width: 269px;
+    width: 100%;
     height: 35px;
     padding: 8px;
+
+    @media screen and (min-width: $tablet) {
+      height: 58px;
+      width: 635px;
+      border-radius: 17px;
+      box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    }
   }
 
   &__search-button {
     position: absolute;
     top: 0;
-    left: 234px;
+    right: 0;
     padding: 0;
     line-height: 0;
     height: 35px;
@@ -58,6 +91,12 @@
     border-radius: 10px;
     color: $accent-color;
 
+    @media screen and (min-width: $tablet) {
+      height: 58px;
+      width: 58px;
+      border-radius: 17px;
+    }
+
     &:hover,
     &:focus {
       cursor: pointer;
@@ -66,6 +105,13 @@
 
   &__icon {
     fill: currentColor;
+    width: 18px;
+    height: 18px;
+
+    @media screen and (min-width: $tablet) {
+      height: 30px;
+      width: 30px;
+    }
   }
 
   &__registration {
@@ -82,6 +128,11 @@
     height: 27px;
     margin: 0 auto;
     margin-bottom: 10px;
+
+    @media screen and (min-width: $tablet) {
+      height: 52px;
+      width: 52px;
+    }
   }
 
   &__registration-link {
@@ -92,6 +143,10 @@
     text-align: center;
 
     color: $main-header-text-color;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 28px;
+    }
   }
 
   .is-hidden {

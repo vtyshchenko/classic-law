@@ -6,12 +6,22 @@
   height: 70px;
   border-radius: 5px;
 
+  @media screen and (min-width: $tablet) {
+    height: 93px;
+  }
+
   &__title {
     font-weight: 700;
     font-size: 18px;
     line-height: 1.22;
     color: $main-header-text-color;
-    margin-left: 28px;
+    margin-left: $mobile-container-padding;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 27px;
+      line-height: 33 / 27 * 100%;
+      margin-left: $tablet-container-padding;
+    }
   }
 
   &__button {
@@ -20,11 +30,23 @@
     align-items: center;
     width: 36px;
     height: 36px;
-    margin-right: 23px;
+    margin-right: $mobile-container-padding;
 
     border-radius: 50%;
-    box-shadow: $box-shadow;
+    box-shadow: 0px 0px 15px $box-shadow-color;
     cursor: pointer;
+
+    @media screen and (min-width: $tablet) {
+      width: 60px;
+      height: 60px;
+      margin-right: $tablet-container-padding;
+    }
+
+    @media screen and (min-width: $lit-desktop) {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
   }
 
   &__icon {
@@ -35,20 +57,30 @@
     height: 2px;
     border: 1px solid $main-header-text-color;
 
+    @media screen and (min-width: $tablet) {
+      width: 33px;
+      height: 3px;
+    }
+
     &::after,
     &::before {
       position: absolute;
       left: -1px;
-      top: -6px;
+      top: -10px;
       display: block;
       content: "";
       background-color: $main-header-text-color;
       width: 24px;
       border: 1px solid $main-header-text-color;
+
+      @media screen and (min-width: $tablet) {
+        width: 33px;
+        height: 3px;
+      }
     }
 
     &::after {
-      top: 4px;
+      top: 8px;
     }
 
     .header__checkbox:checked ~ &::after {

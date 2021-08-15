@@ -234,6 +234,30 @@ img {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .container {
+    max-width: 1336px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+  }
+}
+
 body {
   font-family: "Gilroy";
 }
@@ -378,9 +402,9 @@ body {
 
 .burger-menu {
   position: fixed;
-  padding-top: 20px;
-  padding-right: 11px;
-  padding-left: 16px;
+  padding-top: 15px;
+  padding-right: 13px;
+  padding-left: 13px;
   top: 67px;
   width: 296px;
   height: 618px;
@@ -393,10 +417,37 @@ body {
   z-index: 50;
 }
 
+@media screen and (min-width: 768px) {
+  .burger-menu {
+    top: 90px;
+    width: 744px;
+    height: 1230px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .burger-menu {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
 .burger-menu.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
+}
+
+@media screen and (min-width: 1024px) {
+  .burger-menu.is-open {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 .burger-menu__label {
@@ -405,7 +456,16 @@ body {
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .burger-menu__label {
+    border-radius: 17px;
+    -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    margin-bottom: 45px;
+  }
 }
 
 .burger-menu__input {
@@ -413,15 +473,25 @@ body {
   background: #ffffff;
   border-radius: 10px;
   border: none;
-  max-width: 269px;
+  width: 100%;
   height: 35px;
   padding: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .burger-menu__input {
+    height: 58px;
+    width: 635px;
+    border-radius: 17px;
+    -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .burger-menu__search-button {
   position: absolute;
   top: 0;
-  left: 234px;
+  right: 0;
   padding: 0;
   line-height: 0;
   height: 35px;
@@ -433,12 +503,29 @@ body {
   color: #65c466;
 }
 
+@media screen and (min-width: 768px) {
+  .burger-menu__search-button {
+    height: 58px;
+    width: 58px;
+    border-radius: 17px;
+  }
+}
+
 .burger-menu__search-button:hover, .burger-menu__search-button:focus {
   cursor: pointer;
 }
 
 .burger-menu__icon {
   fill: currentColor;
+  width: 18px;
+  height: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .burger-menu__icon {
+    height: 30px;
+    width: 30px;
+  }
 }
 
 .burger-menu__registration {
@@ -466,6 +553,13 @@ body {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .burger-menu__user-avatar {
+    height: 52px;
+    width: 52px;
+  }
+}
+
 .burger-menu__registration-link {
   font-weight: 600;
   font-size: 14px;
@@ -475,12 +569,34 @@ body {
   color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .burger-menu__registration-link {
+    font-size: 28px;
+  }
+}
+
 .burger-menu .is-hidden {
   display: none;
 }
 
+.call-us {
+  margin-bottom: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .call-us {
+    margin-bottom: 50px;
+  }
+}
+
 .call-us__phone-body {
   margin-bottom: 19px;
+}
+
+@media screen and (min-width: 768px) {
+  .call-us__phone-body {
+    margin-bottom: 34px;
+  }
 }
 
 .call-us__phone {
@@ -491,6 +607,13 @@ body {
   color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .call-us__phone {
+    font-size: 35px;
+    line-height: 120%;
+  }
+}
+
 .call-us__phone-text {
   font-weight: 600;
   font-size: 12px;
@@ -498,10 +621,24 @@ body {
   color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .call-us__phone-text {
+    font-size: 23px;
+    line-height: 121.73913%;
+  }
+}
+
 .call-us__icon {
   width: 13px;
   height: 13px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .call-us__icon {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 .call-us__button {
@@ -512,13 +649,23 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 5px;
-  margin-bottom: 28px;
   font-weight: 600;
   font-size: 14px;
   line-height: 121.42857%;
   text-align: center;
   text-transform: uppercase;
   color: #65c466;
+}
+
+@media screen and (min-width: 768px) {
+  .call-us__button {
+    width: 521px;
+    height: 91px;
+    border: 4px solid #ffffff;
+    border-radius: 10px;
+    font-size: 27px;
+    line-height: 118.51852%;
+  }
 }
 
 .call-us__button:hover, .call-us__button:focus {
@@ -533,6 +680,12 @@ body {
   margin-bottom: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-nav__item {
+    margin-bottom: 30px;
+  }
+}
+
 .menu-nav__link, .menu-nav__title {
   font-size: 16px;
   line-height: 1.1875;
@@ -541,15 +694,39 @@ body {
   color: #294b29;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-nav__link, .menu-nav__title {
+    font-size: 31px;
+    line-height: 116.12903%;
+  }
+}
+
 .menu-nav__submenu {
   display: block;
   margin-left: 10px;
+}
+
+.submenu__item {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .submenu__item {
+    margin-bottom: 20px;
+  }
 }
 
 .submenu__link {
   font-size: 10px;
   line-height: 120%;
   color: #294b29;
+}
+
+@media screen and (min-width: 768px) {
+  .submenu__link {
+    font-size: 19px;
+    line-height: 115.78947%;
+  }
 }
 
 .form-contacts {
@@ -677,12 +854,26 @@ body {
   border-radius: 5px;
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    height: 93px;
+  }
+}
+
 .header__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.22;
   color: #ffffff;
-  margin-left: 28px;
+  margin-left: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__title {
+    font-size: 27px;
+    line-height: 122.22222%;
+    margin-left: 40px;
+  }
 }
 
 .header__button {
@@ -697,11 +888,27 @@ body {
           align-items: center;
   width: 36px;
   height: 36px;
-  margin-right: 23px;
+  margin-right: 12px;
   border-radius: 50%;
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .header__button {
+    width: 60px;
+    height: 60px;
+    margin-right: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header__button {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 .header__icon {
@@ -713,10 +920,17 @@ body {
   border: 1px solid #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .header__icon {
+    width: 33px;
+    height: 3px;
+  }
+}
+
 .header__icon::after, .header__icon::before {
   position: absolute;
   left: -1px;
-  top: -6px;
+  top: -10px;
   display: block;
   content: "";
   background-color: #ffffff;
@@ -724,8 +938,15 @@ body {
   border: 1px solid #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .header__icon::after, .header__icon::before {
+    width: 33px;
+    height: 3px;
+  }
+}
+
 .header__icon::after {
-  top: 4px;
+  top: 8px;
 }
 
 .header__checkbox:checked ~ .header__icon::after {
