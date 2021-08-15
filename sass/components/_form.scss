@@ -82,7 +82,7 @@
     transition: color $anim-duration $anim-timing-function;
 
     .form__checkbox-confident:checked + & {
-      background-image: url("../images/checkbox-checked.svg");
+      background-image: url("../images/svg/checkbox-checked.svg");
       background-color: $main-header-text-color;
       background-repeat: no-repeat;
       background-position: center;

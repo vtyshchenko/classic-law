@@ -1,15 +1,19 @@
 .footer {
+  position: relative;
   background-color: $footer-background-color;
 
   &__copyrights {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     font-family: $font-family-gilroy;
-    font-size: 15px;
-    line-height: 18 / 15 * 100%;
+    font-size: 11px;
+    line-height: 18 / 11 * 100%;
 
-    display: flex;
-    align-items: center;
+    text-align: center;
 
     color: $secondary-footer-text-color;
+    width: 100%;
   }
 
   &__menu {
@@ -17,8 +21,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: -20px;
-    // margin-left: 10px;
+    margin-bottom: 25px;
   }
 
   &__menu-item {
@@ -38,6 +41,7 @@
   }
 
   &__contacts {
+    margin-bottom: 25px;
   }
 
   &__phone {
@@ -51,6 +55,7 @@
     text-transform: uppercase;
 
     color: $secondary-footer-text-color;
+    margin-bottom: 10px;
   }
 
   &__mail {
@@ -68,10 +73,11 @@
     font-family: $font-family-gilroy;
     font-size: 11px;
     line-height: 13 / 11 * 100%;
-    display: flex;
-    align-items: center;
     text-align: center;
 
     color: $main-footer-text-color;
+    padding-bottom: 30px;
+
+    width: 100%;
   }
 }

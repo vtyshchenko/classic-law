@@ -1,4 +1,7 @@
 .social__list {
+  position: absolute;
+  right: 12px;
+  bottom: 87px;
   display: flex;
   align-items: center;
 }
@@ -13,8 +16,8 @@
   @extend %flex__center;
   color: $footer-background-color;
   background-color: $main-footer-text-color;
-  width: 44px;
-  height: 44px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   transition: background-color $anim-duration $anim-timing-function,
     color $anim-duration $anim-timing-function;
@@ -27,7 +30,7 @@
 }
 
 .social__icon {
-  @include settings__icons(currentColor, 20px, 20px);
+  @include settings__icons(currentColor, 12px, 12px);
 }
 
 .footer__social-list {

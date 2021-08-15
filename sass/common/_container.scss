@@ -1,7 +1,8 @@
 .container {
   position: relative;
   max-width: 320px;
-  padding: 0 $mobile-container-padding;
+  padding-right: $mobile-container-padding;
+  padding-left: $mobile-container-padding;
   margin: 0 auto;
   //   background-color: aqua;
 }
