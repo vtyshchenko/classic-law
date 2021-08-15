@@ -706,10 +706,6 @@ body {
   margin-left: 10px;
 }
 
-.submenu__item {
-  margin-bottom: 10px;
-}
-
 @media screen and (min-width: 768px) {
   .submenu__item {
     margin-bottom: 20px;
